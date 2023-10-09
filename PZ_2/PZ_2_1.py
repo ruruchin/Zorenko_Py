@@ -5,4 +5,4 @@ chislo_2 = chislo // 10
 slochenie = chislo_1 + chislo_2
 proizvedenie = chislo_1 * chislo_2
 print("Результат суммы цифр числа:",slochenie, sep=' ')
-print("Результат произведен ы числа:",proizvedenie, sep=' ')
+print("Результат произведен цифр числа:",proizvedenie, sep=' ')
