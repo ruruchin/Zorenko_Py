@@ -1,5 +1,5 @@
 #Дано двузначное число. Найти сумму и произведение его цифр.
-chislo=int(input("Введите двузначное число: "))
+chislo=int(input("Введите двузначное число: ", sep='|',  end='|'))
 chislo_1 = chislo % 10
 chislo_2 = chislo // 10
 slochenie = chislo_1 + chislo_2
