@@ -1,18 +1,19 @@
 # Вариант 12.
 # 2. Дано целое число. Вывести его строку-описание вида «отрицательное четное
 # число», «нулевое число», «положительное нечетное число» и т. д.
-number = int(input("Введите целое число: "))
+print("Введите ЧИСЛО: ")
+znachenie = ''
+number = int(input())
+if  number == 0:
+    print("нулевое число"),exit()
 
-if number < 0:
-    znachenie = "отрицательное"
-elif number == 0:
-    znachenie = "нулевое"
+if number <0:
+    znachenie += "отрицательное  "
 else:
-    znachenie = "положительное"
+    znachenie += "положительное "
 
 if number % 2 == 0:
-    znachenie += "четное число"#дополнительное значение для переменной
+    znachenie += "четное число"
 else:
-    znachenie += "нечетное число"#Дополнительная значение для переменной
-
-print(znachenie)
+    znachenie += "нечетное число"
+print(number,"=>",znachenie)

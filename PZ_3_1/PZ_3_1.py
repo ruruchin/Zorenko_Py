@@ -1,30 +1,37 @@
 # Вариант 12.
 # 1. Даны три целых числа: A, B, C. Проверить истинность высказывания: «Каждое из
 # чисел A, B, C положительное».
-
-
-
 print("Ваша задача ввести (!)ПОЛОЖИТЕЛЬНЫЕ(!) => (!)ЦЕЛЫЕ(!) числа")
-from function import glitch
-from function import postglitch
 
+a = input("Введите ваше первое число : ")
+b = input("Введите ваше второе число : ")
+c = input("Введите ваше третье число : ")
 
+while type(a) != int:
+    try:
+        a = int(a)
+    except ValueError:
+        print("!", "Введите правильный тип данных", "!", sep=' ')
+        a = input("Введите ваше число a: ")
 
-glitch()
-postglitch()
-print("Перезапустить программу?"'\n'"ДА/НЕТ")
-perezapyck = str(input())
-if perezapyck == "ДА":
-    print("Ваша задача ввести (!)ПОЛОЖИТЕЛЬНЫЕ(!) => (!)ЦЕЛЫЕ(!) числа")
+while type(b) != int:
+    try:
+        b = int(b)
+    except ValueError:
+        print("!", "Введите целоe положительное число", "!", sep=' ')
+        b = input("Введите ваше число b: ")
 
-    a = input("Введите ваше первое число ^-^: ")
-    b = input("Введите ваше второе число ^-^: ")
-    c = input("Введите ваше третье число ^-")
-    glitch()
-    postglitch()
-elif perezapyck =="НЕТ":
-    print("Конец программы"),exit()
+while type(c) != int:
+    try:
+        c = int(c)
+    except ValueError:
+        print("!", "Введите целоe положительное число", "!", sep=' ')
+        c = input("Введите ваше число c: ")
+        
+if a > 0 and b > 0 and c > 0:
+    print("ВАШИ ВВЕДЕННЫЕ ЧИСЛА ПОЛОЖИТЕЛЬНЫ!!!!!!!!!!!!!")
 else:
-    exit()
+    print("!", "ВВЕДИТЕ ЧИСЛА СОГЛАСНО УСЛОВИЮ", "!")
+
 
 
