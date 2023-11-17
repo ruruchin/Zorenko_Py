@@ -4,7 +4,7 @@
 print("Введите ЧИСЛО: ")
 znachenie = ''
 number = int(input())
-if  number == 0:
+if number == 0:
     print("нулевое число"),exit()
 
 if number <0:
