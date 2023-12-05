@@ -29,7 +29,7 @@ while type(c) != int:
         c = input("Введите ваше число c: ")
 
 if a > 0 and b > 0 and c > 0:
-    print("ВАШИ ВВЕДЕННЫЕ ЧИСЛА ПОЛОЖИТЕЛЬНЫ!")
+    print("True")
 else:
-    print("!", "ВВЕДИТЕ ЧИСЛА СОГЛАСНО УСЛОВИЮ", "!")
+    print("!", "False", "!")
 

@@ -17,3 +17,11 @@ if number % 2 == 0:
 else:
     znachenie += "нечетное число"
 print(number,"=>",znachenie)
+
+znachenie = 3 if number ==0 else znachenie = 4
+
+
+
+
+
+
