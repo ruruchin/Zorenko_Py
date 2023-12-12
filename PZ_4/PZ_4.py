@@ -2,7 +2,7 @@
 * Дано целое число N (>0). Найти значение выражения 1.1 - 1.2 + 1.3 - ... (N слагаемых,
 * знаки чередуются). Условный оператор не использовать.
 """
-def calculate_expression(N):
+def calculate(N):
     result = 0.0
     digit = 1.0
 
@@ -14,5 +14,5 @@ def calculate_expression(N):
 
 
 N = int(input("Введите целое число N (>0): "))
-result = calculate_expression(N)
+result = calculate(N)
 print(f"Значение выражения для N = {N}: {result}")
