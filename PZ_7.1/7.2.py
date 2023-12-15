@@ -8,3 +8,4 @@ for letter in predlo:
     if len(letter)<len(small_word):
         small_word = letter
 print(small_word)
+
