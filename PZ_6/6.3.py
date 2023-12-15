@@ -9,9 +9,9 @@ import random
 # for i in range(K):
 #     Lsd.insert(0, 0)
 # print(Lsd)
-list = []
-for _ in range(100):
-    list.append(random.randint(0,100))
+# for _ in range(100):
+#     list.append(random.randint(0,100))
+list = [random.randint(1,10) for i in range(10)]
 print(list)
 K = int(input("Введите число сдвигов и первых элементов положенных нулю: "))
 if K < 2:
@@ -20,3 +20,8 @@ else:
     for _ in range(K):
         list.insert(0, 0)
     print(list)
+
+
+
+
+

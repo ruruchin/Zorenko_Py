@@ -8,7 +8,7 @@ def calculate(N):
 
     for i in range(1, N + 1):
         result += digit * (1.0 + i / 10)
-        digit = -digit  # меняем знак
+        digit = -digit  # меняем знак *-*
 
     return result
 
