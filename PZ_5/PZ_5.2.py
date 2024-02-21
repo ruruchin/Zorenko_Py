@@ -1,5 +1,8 @@
+import random
 def SortDec3(A,B,C):
- '''Сортировка для (N) чисел по убыванию'''
+ '''
+  Сортировка для (N) чисел по убыванию
+ '''
 N = int(input("Введите сколько чисел вы хотите отсортировать и внести в список: "))
 my_SortList = [int(input()) for _ in range(N)]
 print('-' * len(my_SortList)*20)

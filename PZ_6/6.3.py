@@ -19,7 +19,7 @@ if K < 2:
 else:
     for _ in range(K):
         list.insert(0, 0)
-    print(list)
+    print(list[:-K])
 
 
 
