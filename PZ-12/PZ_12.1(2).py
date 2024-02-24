@@ -1,5 +1,5 @@
 
-from random import randrange, random, randint
+from random import randint
 tripletick = [randint(-100, 100) for xxx in range(100) if xxx > 0]
 new=[xx for xx in tripletick if xx>0]
 for plus in new:
@@ -7,7 +7,7 @@ for plus in new:
         plus +=1
 print(new)
 print(tripletick)
-print(f'НУ НОРМАЛЬНЫЕ ЧИСЛА -> {plus}')
+print(f'Положительные числа {plus}')
 
 
 

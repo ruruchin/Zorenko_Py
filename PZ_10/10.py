@@ -13,12 +13,12 @@ stores = {
 }
 
 # нельзя соль
-salt = [store for store, products in stores.items() if 'соль' not in products]
+salt = {store for store, products in stores.items() if 'соль' not in products}
 
 # молоко печенье и сыр
-Cheese = [store for store, products in stores.items() if {'молоко', 'печенье', 'сыр'}.issubset(products)]
+Cheese = {store for store, products in stores.items() if {'молоко', 'печенье', 'сыр'}.issubset(products)}
 
 #  мясо и молоко
-belock = [store for store, products in stores.items() if {'мясо', 'молоко'}.issubset(products)]
+belock ={store for store, products in stores.items() if {'мясо', 'молоко'}.issubset(products)}
 
 print(salt, "\n", Cheese, "\n", belock)
