@@ -10,7 +10,7 @@ class Trankquil:
         self.model = model
         print(f"Модель автотранспорта {model}")
 
-    def NewYear(self,year=1999):
+    def NewYear(self, year=1999):
         self.year = year
         print(f"Год выпуска {year}")
 
