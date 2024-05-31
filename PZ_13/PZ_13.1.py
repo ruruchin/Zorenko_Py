@@ -6,7 +6,7 @@ import random
 stroki = int(input("количество строк: "))
 colonki = int(input("количество столбцов: "))
 
-matrix = [[random.randint(-2, 10) for _ in range(colonki)] for _ in range(stroki)]
+matrix = [[random.randint(-2, 1) for _ in range(colonki)] for _ in range(stroki)]
 
 for row in matrix:
     print(row)
